@@ -9,6 +9,7 @@ function App() {
     <div>
       <About/>
    <Contact/>
+   <About/>
     </div>
   )
 }
