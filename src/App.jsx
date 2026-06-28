@@ -1,6 +1,7 @@
 import './App.css'
 import About from './about'
 import Contact from './contact'
+import Details from './details'
 
 function App() {
  
@@ -9,7 +10,7 @@ function App() {
     <div>
       <About/>
    <Contact/>
-   <About/>
+   <Details/>
     </div>
   )
 }
