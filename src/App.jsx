@@ -3,6 +3,7 @@ import About from './about'
 import Contact from './contact'
 import Details from './details'
 import Passport from './Passport'
+import Footer from "./Footer"
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
    <Contact/>
    <Details/>
    <Passport/>
+   <Footer />
     </div>
   )
 }
