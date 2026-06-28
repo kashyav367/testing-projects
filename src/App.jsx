@@ -1,13 +1,15 @@
-
-
 import './App.css'
 import About from './about'
+import Contact from './contact'
 
 function App() {
  
 
   return (
-   <About/>
+    <div>
+      <About/>
+   <Contact/>
+    </div>
   )
 }
 
