@@ -43,14 +43,14 @@ Then use this structure if there are findings:
 - Tailor feedback to the repository language and conventions visible in the diff`;
 
 
-type ReviewInput = {
-    repoFullName: string;
-    title: string;
-    /** Chunks retrieved from the PR's Pinecone namespace */
-    contextSnippets: string[];
-    /** Optional chunks from repo-sync namespace (full codebase context) */
-    repoContextSnippets: string[];
-};
+// type ReviewInput = {
+//     repoFullName: string;
+//     title: string;
+//     /** Chunks retrieved from the PR's Pinecone namespace */
+//     contextSnippets: string[];
+//     /** Optional chunks from repo-sync namespace (full codebase context) */
+//     repoContextSnippets: string[];
+// };
 
 
 function buildRepoContextSection(repoContextSnippets: string[]) {
