@@ -43,29 +43,29 @@ Then use this structure if there are findings:
 - Tailor feedback to the repository language and conventions visible in the diff`;
 
 
-// type ReviewInput = {
-//     repoFullName: string;
-//     title: string;
-//     /** Chunks retrieved from the PR's Pinecone namespace */
-//     contextSnippets: string[];
-//     /** Optional chunks from repo-sync namespace (full codebase context) */
-//     repoContextSnippets: string[];
-// };
+type ReviewInput = {
+    repoFullName: string;
+    title: string;
+    /** Chunks retrieved from the PR's Pinecone namespace */
+    contextSnippets: string[];
+    /** Optional chunks from repo-sync namespace (full codebase context) */
+    repoContextSnippets: string[];
+};
 
 
-function buildRepoContextSection(repoContextSnippets: string[]) {
-    if (repoContextSnippets.length === 0) {
-        return "";
-    }
+// function buildRepoContextSection(repoContextSnippets: string[]) {
+//     if (repoContextSnippets.length === 0) {
+//         return "";
+//     }
 
-    const repoContext = repoContextSnippets.join("\n\n---\n\n");
+//     const repoContext = repoContextSnippets.join("\n\n---\n\n");
 
-    return `
+//     return `
   
-  Related code from the repository (for context only, not part of the change):
+//   Related code from the repository (for context only, not part of the change):
   
-  ${repoContext}`;
-}
+//   ${repoContext}`;
+// }
 
 export async function generateReview(input: ReviewInput) {
     const context = input.contextSnippets.join("\n\n---\n\n");
