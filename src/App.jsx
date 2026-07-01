@@ -5,6 +5,8 @@ import Details from './details'
 import Passport from './Passport'
 import Footer from "./Footer"
 import Dashboard from "./Dashboard"
+import Hero from './hero'
+import End from './end'
 
 function App() {
  
@@ -17,6 +19,8 @@ function App() {
    <Passport/>
    <Footer />
    <Dashboard/>
+   <Hero/>
+   <End/>
     </div>
   )
 }
